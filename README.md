@@ -1,6 +1,6 @@
 # Disclaimer
 
-<b>I am NOT the creator of "TutuCrack", TutuCrack has been created by <a href="https://twitter.com/NotSaundersTech">@NotSaundersTechh</a>!!!<br> I only ported the Flex3 patch to Theos to run it without Flex 3.</b>
+<b>I am NOT the creator of "TutuCrack", TutuCrack has been created by <a href="https://twitter.com/NotSaundersTech">@NotSaundersTech</a>!!!<br> I only ported the Flex3 patch to Theos to run it without Flex 3.</b>
 
 # Depends
 - This [SDK](https://github.com/CrafterPika/CyBackground/blob/master/deps/iPhoneOS_13.1_Build_SDK.zip?raw=true) (for building the tweak)
