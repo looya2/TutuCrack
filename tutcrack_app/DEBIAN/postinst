@@ -1,0 +1,38 @@
+#!/bin/sh
+declare -a cydia
+declare -a pass
+cydia=($CYDIA)
+pass=0
+
+echo "Installing App...";
+appinst /var/mobile/Downloads/TUTUCRACK.ipa 2>&1
+
+if [ $? -eq 0 ]; then
+
+    echo "Installed App...";
+else
+	
+	echo "Retrying Installation...";
+	appinst /var/mobile/Downloads/TUTUCRACK.ipa 2>&1
+	if [ $? -eq 0 ]; then
+
+    	echo "Installed App...";
+	else
+		
+		echo "Failed to install file...";
+		pass=1
+	fi
+fi
+
+echo "Removing installation files...";
+rm -rf /var/mobile/Downloads/TUTUCRACK.ipa 2>&1
+
+echo "Clearing homescreen icon cache...";
+
+uicache 2>&1
+		
+if [[ ${CYDIA+@} ]]; then
+	eval "echo 'finish:reload' >&${cydia[0]}"
+fi
+
+exit $pass

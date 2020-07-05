@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Removing old installation files...";
+rm -rf /var/mobile/Downloads/TUTUCRACK.ipa 2>&1
+
+exit 0

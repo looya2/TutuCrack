@@ -1,0 +1,22 @@
+#!/bin/sh
+declare -a cydia
+cydia=($CYDIA)
+
+case "$1" in
+    purge|remove|uninstall)
+        # do some magic
+        
+        echo "Clearing homescreen icon cache...";
+		uicache
+        
+        if [[ ${CYDIA+@} ]]; then
+		    eval "echo 'finish:reload' >&${cydia[0]}"
+		fi
+        ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 0
+        ;;
+esac
+
+exit 0

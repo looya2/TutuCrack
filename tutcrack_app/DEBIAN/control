@@ -1,0 +1,9 @@
+Package: tech.saunders.tutucrack
+Name: TutuCrack
+Version: 3.2.2-2
+Architecture: iphoneos-arm
+Description: tutuapp vip, but cracked for jb state
+Author: Saunders Tech, Thunder7Yoshi, Shiro
+Maintainer: Saunders Tech, Thunder7Yoshi, Shiro
+Section: Tweaks
+Depends: net.angelxwind.appsyncunified, com.linusyang.appinst, tech.saunders.tutcrackpatch, com.tigisoftware.appdatamanager

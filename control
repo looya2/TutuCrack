@@ -1,0 +1,9 @@
+Package: tech.saunders.tutcrackpatch
+Name: TutuCrack (Patch)
+Author: Saunders Tech
+Description: Cracks TutuApp VIP. Requires AppsManager to finish. Created by Saunders Tech.
+Depends: mobilesubstrate
+Maintainer: Saunders tech
+Architecture: iphoneos-arm
+Section: Tweaks
+Version: 1.0.0
